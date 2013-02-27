@@ -89,7 +89,7 @@ Serialization is done very similar to JSON serialization: all that needs to chan
 ```java
 // Important: create XmlMapper; it will use proper factories, workarounds
 ObjectMapper xmlMapper = new XmlMapper();
-String xml = xmlMapper.writeValue(new Simple());
+String xml = xmlMapper.writeValueAsString(new Simple());
 ```
 
 and with POJO like:
